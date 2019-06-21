@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h1>テクノロジー（藤原）JavaScript練習用ページ</h1>
+    <h1 id="test">テクノロジー（藤原）JavaScript練習用ページ</h1>
 
     <!-- 外部ファイルのJavaScript（js/main.js）を読み込む -->
     <script src="js/main.js"></script>
@@ -17,6 +17,11 @@
         // ここにJavaScriptコードを書く
         console.log("おはよう！");
         // window.alert("こんにちは！");
+        window.alert("ばか");
+        document.getElementById("test").innerHTML = "テクノロジー（藤原）JavaScript練習用ページ(書き換え済み)";
+        for(let i = 0;i < 10;i++){
+            console.log(i + 1 + "回目の表示");
+        }
     </script>
 
     <!-- 以下は触らない（タブを閉じるときに警告を出すためのコード） -->
